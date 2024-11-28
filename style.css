@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(45, 143, 45);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns items to the left */
+    gap: 20px;
+    width: 90%;
+    max-width: 600px;
+    text-align: left; /* Ensures text is left-aligned */
+    padding-left: 20px; /* Optional padding for spacing */
+  }
+
+  .text {
+    font-size: 40px;
+    word-wrap: break-word;
+  }
+
+  /* Responsive font sizes */
+  @media (max-width: 768px) {
+    .text {
+      font-size: 30px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .text {
+      font-size: 20px;
+    }
+  }
